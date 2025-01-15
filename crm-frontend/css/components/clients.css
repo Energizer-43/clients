@@ -1,0 +1,163 @@
+.clients {
+  padding-top: 40px;
+}
+
+.clients__title {
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--color-mine-shaft);
+  margin-bottom: 26px;
+}
+
+.clients__wrapper {
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+.clients__table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 1186px;
+}
+
+.clients__tr {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.clients__th__item {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-silver-chalice);
+}
+
+.clients__th__item--id {
+  width: 7%;
+  cursor: pointer;
+}
+
+.id-text-span {
+  margin-right: 2px;
+}
+
+.clients__th__item--name {
+  width: 25%;
+  cursor: pointer;
+}
+
+.full-name-text-span {
+  margin-right: 2px;
+}
+
+.name-span {
+  margin-right: 2px;
+}
+
+.clients__th__item--date-create {
+  width: 16%;
+  cursor: pointer;
+}
+
+.date-create-text-span {
+  margin-right: 2px;
+}
+
+.name-text-span {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.clients__th__item--date-change {
+  width: 16%;
+  cursor: pointer;
+}
+
+.date-change-text-span {
+  margin-right: 2px;
+}
+
+.clients__th__item--contacts {
+  width: 11%;
+}
+
+.clients__th__item--actions {
+  width: 25%;
+}
+
+.sort-up {
+  color: var(--color-electric-violet);
+  transition: color .3s ease;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -ms-transition: color .3s ease;
+  -o-transition: color .3s ease;
+}
+
+.id-svg-span svg,
+.name-span svg,
+.date-create-span svg,
+.date-change-span svg {
+  transition: transform .3s ease;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+}
+
+.sort-up svg {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform .3s ease;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+}
+
+.sort-up svg path {
+  fill: var(--color-electric-violet);
+}
+
+.clients__btn {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--color-heliotrope);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-heliotrope);
+  padding: 12px 26px;
+  transition: color .3s ease, background-color .3s ease;
+  -webkit-transition: color .3s ease, background-color .3s ease;
+  -moz-transition: color .3s ease, background-color .3s ease;
+  -ms-transition: color .3s ease, background-color .3s ease;
+  -o-transition: color .3s ease, background-color .3s ease;
+}
+
+.clients__svg {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.clients__btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-heliotrope);
+}
+
+.clients__btn svg path {
+  transition: fill .3s ease;
+  -webkit-transition: fill .3s ease;
+  -moz-transition: fill .3s ease;
+  -ms-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+}
+
+.clients__btn:hover svg path {
+  fill: var(--color-white);
+}

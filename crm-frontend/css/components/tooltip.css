@@ -1,0 +1,34 @@
+.tooltips {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+  -webkit-transition: opacity .3s ease, visibility .3s ease;
+  -moz-transition: opacity .3s ease, visibility .3s ease;
+  -ms-transition: opacity .3s ease, visibility .3s ease;
+  -o-transition: opacity .3s ease, visibility .3s ease;
+  padding: 7px 14px;
+  background-color: var(--color-mine-shaft);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-white);
+}
+
+.tooltips::before {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%);
+  clip-path: polygon(100% 0, 0 0, 51% 100%);
+  background-color: var(--color-mine-shaft);
+}

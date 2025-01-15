@@ -1,0 +1,24 @@
+.header__inner {
+  position: relative;
+  width: 100%;
+}
+
+.header__find-list {
+  position: absolute;
+  max-width: 581px;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  box-shadow: var(--header-box-shadow);
+}
+
+.search__item {
+  padding: 10px;
+  font-size: 14px;
+  color: var(--color-mine-shaft);
+}
+
+.search__item:not(:last-child) {
+  margin-bottom: 5px;
+}

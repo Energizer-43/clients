@@ -1,0 +1,21 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-mercury: #E5E5E5;
+  --color-wild-sand: #F5F5F5;
+  --color-mischka: #E7E5EB;
+  --color-melrose: #B89EFF;
+  --color-heliotrope: #9873FF;
+  --color-electric-violet: #8052FF;
+  --color-gray-suit: #C8C5D1;
+  --color-burnt-sienna: #F06A4D;
+  --color-athens-gray: #F4F3F6;
+  --color-dusty-gray: #9A9A9A;
+  --color-silver-chalice: #B0B0B0;
+  --color-mine-shaft: #333333;
+
+  --header-box-shadow: 0px 9.03012px 27.0904px rgba(176, 190, 197, 0.32), 0px 3.38629px 5.64383px rgba(176, 190, 197, 0.32);
+  --header-input-border-color: rgba(51, 51, 51, 0.2);
+  --contact-background: rgba(200, 197, 209, 0.2);
+  --contact-background-border: rgba(200, 197, 209, 0.5);
+  --contact-background-items: rgba(231, 229, 235, 0.5);
+}

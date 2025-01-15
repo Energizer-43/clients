@@ -1,0 +1,22 @@
+.edit-modal__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 130px;
+  max-width: 450px;
+  padding: 22px 30px 27px 30px;
+  background-color: var(--color-white);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+
+.edit-modal__id-span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-silver-chalice);
+  margin-left: 9px;
+}

@@ -1,0 +1,41 @@
+/* main */
+@import 'normalize.css';
+@import 'variables.css';
+@import 'fonts.css';
+
+/* components */
+@import 'components/header.css';
+@import 'components/clients.css';
+@import 'components/modal.css';
+@import 'components/contacts.css';
+@import 'components/clients-item.css';
+@import 'components/modal-delete.css';
+@import 'components/modal-edit.css';
+@import 'components/tooltip.css';
+@import 'components/preloader.css';
+@import 'components/search-list.css';
+@import 'components/media.css';
+
+/* other */
+body {
+  min-width: 320px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-wild-sand);
+}
+
+.container {
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}

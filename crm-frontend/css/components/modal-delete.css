@@ -1,0 +1,82 @@
+.delete-modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 227px;
+  max-width: 450px;
+  padding: 22px 30px 27px 30px;
+  background-color: var(--color-white);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+
+.delete-modal__title {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-mine-shaft);
+  margin-bottom: 11px;
+}
+
+.delete-modal__close-btn {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+}
+
+.delete-modal__close-btn svg path {
+  transition: fill .3s ease;
+  -webkit-transition: fill .3s ease;
+  -moz-transition: fill .3s ease;
+  -ms-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+}
+
+.delete-modal__close-btn:hover svg path {
+  fill: var(--color-electric-violet);
+}
+
+.delete-modal__text {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-mine-shaft);
+  max-width: 275px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.delete-modal__delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-white);
+  background-color: var(--color-heliotrope);
+  padding: 13px 35px;
+  margin-bottom: 5px;
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -ms-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+}
+
+.delete-modal__delete-btn:hover {
+  background-color: var(--color-melrose);
+}
+
+.delete-modal__delete-btn:active {
+  background-color: var(--color-electric-violet);
+}
+
+.delete-modal__cancel-btn {
+  font-size: 12px;
+  color: var(--color-mine-shaft);
+  border-bottom: 1px solid var(--color-mine-shaft);
+}

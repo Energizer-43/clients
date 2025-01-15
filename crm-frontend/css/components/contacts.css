@@ -1,0 +1,183 @@
+.contact {
+  display: flex;
+  align-items: center;
+  width: 390px;
+  margin-bottom: 25px;
+}
+
+.contact__type {
+  position: relative;
+}
+
+.contact__name-btn {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-mischka);
+  border: 1px solid var(--color-gray-suit);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-mine-shaft);
+  padding: 10px 20px 10px 12px;
+  width: 123px;
+  height: 37px;
+}
+
+.contact__name-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  width: 10px;
+  height: 6px;
+  background-image: url(../../img/arrow-contacts.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transition: transform .3s ease;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.contact__list--active-arrow.contact__name-btn::after {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.contact__list {
+  width: 123px;
+  position: absolute;
+  left: 0;
+  background-color: var(--color-athens-gray);
+  border-right: 1px solid var(--color-gray-suit);
+  border-bottom: 1px solid var(--color-gray-suit);
+  border-left: 1px solid var(--color-gray-suit);
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+  -webkit-transition: opacity .3s ease, visibility .3s ease;
+  -moz-transition: opacity .3s ease, visibility .3s ease;
+  -ms-transition: opacity .3s ease, visibility .3s ease;
+  -o-transition: opacity .3s ease, visibility .3s ease;
+}
+
+.contact__list.contact__list--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact__item {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-mine-shaft);
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+  -webkit-transition: background-color .3s ease;
+  -moz-transition: background-color .3s ease;
+  -ms-transition: background-color .3s ease;
+  -o-transition: background-color .3s ease;
+}
+
+.contact__item:hover {
+  background-color: var(--contact-background-items);
+}
+
+.contact__input {
+  width: 100%;
+  max-width: 240px;
+  height: 37px;
+  outline: none;
+  border: none;
+  border-top: 1px solid var(--color-gray-suit);
+  border-bottom: 1px solid var(--color-gray-suit);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-mine-shaft);
+  padding: 8px 12px;
+}
+
+.contact__input::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-silver-chalice);
+}
+
+.contact__delete-btn {
+  position: relative;
+  width: 27px;
+  height: 37px;
+  border: 1px solid var(--color-gray-suit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mischka);
+  transition: border-color .3s ease;
+  -webkit-transition: border-color .3s ease;
+  -moz-transition: border-color .3s ease;
+  -ms-transition: border-color .3s ease;
+  -o-transition: border-color .3s ease;
+}
+
+.contact__delete-btn:hover {
+  border-color: var(--color-burnt-sienna);
+}
+
+.contact__delete-btn path {
+  transition: fill .3s ease;
+  -webkit-transition: fill .3s ease;
+  -moz-transition: fill .3s ease;
+  -ms-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+}
+
+.contact__delete-btn:hover path {
+  fill: var(--color-burnt-sienna);
+}
+
+.contact__delete-btn:hover .--delete-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.--delete-tooltip {
+  width: 133px;
+  top: -30px;
+}
+
+.contact-tooltip {
+  display: flex;
+  width: auto;
+  top: -45px;
+}
+
+.clients__link {
+  position: relative;
+}
+
+.contact-tooltip__type {
+  margin-right: 5px;
+}
+
+.contact-tooltip__value {
+  text-decoration: underline;
+}
+
+.clients__link:hover .contact-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s ease, visibility .3s ease;
+}
